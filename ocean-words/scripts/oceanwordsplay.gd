@@ -17,6 +17,8 @@ var c5 = false
 var won = false
 var submit_answer = ""
 var game_done = false
+var request = HTTPRequest.new()
+
 	
 func load_words():
 	var file = FileAccess.open("res://words.txt", FileAccess.READ)
@@ -41,6 +43,7 @@ func _ready():
 	load_data()
 	pick_word()
 	print(answer)
+	$BgBlur/WordShow/Word.text = answer.capitalize()
 
 func pick_word():
 	var available_words = []
@@ -69,10 +72,17 @@ func game_over():
 	row5 = true
 	used_words.append(answer)
 	save_data()
+	$BgBlur.visible = true
 	
 #game actually starting
 func check():
-	submit_answer = guess
+	submit_answer = guess.to_lower()
+
+	if submit_answer not in words:
+		print("NOT A WORD")
+		return
+
+	print("VALID WORD")
 	if row1 == false:
 		row1 = true
 		c1 = false
@@ -734,3 +744,7 @@ func _on_delete_pressed() -> void:
 				c1 = false
 				$"Row Letters/Row5/L1".text = ""
 #endregion
+
+
+func _on_restart_pressed() -> void:
+	get_tree().reload_current_scene()
