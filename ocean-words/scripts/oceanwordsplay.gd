@@ -537,3 +537,200 @@ func _input(event):
 					c1 = false
 					$"Row Letters/Row5/L1".text = ""
 				
+
+
+#region KeyButs
+func _on_bq_pressed() -> void:
+	guess += "q"
+	add_letter()
+
+func _on_bw_pressed() -> void:
+	guess += "w"
+	add_letter()
+
+func _on_be_pressed() -> void:
+	guess += "e"
+	add_letter()
+
+func _on_br_pressed() -> void:
+	guess += "r"
+	add_letter()
+
+func _on_bt_pressed() -> void:
+	
+	guess += "t"
+	add_letter()
+
+func _on_by_pressed() -> void:
+	guess += "y"
+	add_letter()
+
+func _on_bu_pressed() -> void:
+	guess += "u"
+	add_letter()
+
+func _on_bi_pressed() -> void:
+	guess += "i"
+	add_letter()
+
+func _on_bo_pressed() -> void:
+	guess += "o"
+	add_letter()
+
+func _on_bp_pressed() -> void:
+	guess += "p"
+	add_letter()
+
+func _on_ba_pressed() -> void:
+	guess += "a"
+	add_letter()
+
+func _on_bs_pressed() -> void:
+	guess += "s"
+	add_letter()
+
+func _on_bd_pressed() -> void:
+	guess += "d"
+	add_letter()
+
+func _on_bf_pressed() -> void:
+	guess += "f"
+	add_letter()
+
+func _on_bg_pressed() -> void:
+	guess += "g"
+	add_letter()
+
+func _on_bh_pressed() -> void:
+	guess += "h"
+	add_letter()
+
+func _on_bj_pressed() -> void:
+	guess += "j"
+	add_letter()
+
+func _on_bk_pressed() -> void:
+	guess += "k"
+	add_letter()
+
+func _on_bl_button_up() -> void:
+	guess += "l"
+	add_letter()
+
+func _on_bz_pressed() -> void:
+	guess += "z"
+	add_letter()
+
+func _on_bx_pressed() -> void:
+	guess += "x"
+	add_letter()
+
+func _on_bc_pressed() -> void:
+	guess += "c"
+	add_letter()
+
+func _on_bv_pressed() -> void:
+	guess += "v"
+	add_letter()
+
+func _on_bb_pressed() -> void:
+	guess += "b"
+	add_letter()
+
+func _on_bn_pressed() -> void:
+	guess += "n"
+	add_letter()
+
+func _on_bm_pressed() -> void:
+	guess += "m"
+	add_letter()
+
+func _on_enter_pressed() -> void:
+	if guess.length() == 5:
+		check()
+
+
+func _on_delete_pressed() -> void:
+	if guess.length() > 0:
+		guess = guess.left(guess.length() - 1)
+		if row1 == false:
+			if c5 == true:
+				c5 = false
+				$"Row Letters/Row1/L4".text = ""
+			elif c4 == true:
+				c4 = false
+				$"Row Letters/Row1/L3".text = ""
+			elif c3 == true:
+				c3 = false
+				$"Row Letters/Row1/L5".text = ""
+			elif c2 == true:
+				c2 = false
+				$"Row Letters/Row1/L2".text = ""
+			elif c1 == true:
+				c1 = false
+				$"Row Letters/Row1/L1".text = ""
+		elif row2 == false:
+			if c5 == true:
+				c5 = false
+				$"Row Letters/Row2/L4".text = ""
+			elif c4 == true:
+				c4 = false
+				$"Row Letters/Row2/L3".text = ""
+			elif c3 == true:
+				c3 = false
+				$"Row Letters/Row2/L5".text = ""
+			elif c2 == true:
+				c2 = false
+				$"Row Letters/Row2/L2".text = ""
+			elif c1 == true:
+				c1 = false
+				$"Row Letters/Row2/L1".text = ""
+		elif row3 == false:
+			if c5 == true:
+				c5 = false
+				$"Row Letters/Row3/L4".text = ""
+			elif c4 == true:
+				c4 = false
+				$"Row Letters/Row3/L3".text = ""
+			elif c3 == true:
+				c3 = false
+				$"Row Letters/Row3/L5".text = ""
+			elif c2 == true:
+				c2 = false
+				$"Row Letters/Row3/L2".text = ""
+			elif c1 == true:
+				c1 = false
+				$"Row Letters/Row3/L1".text = ""
+		elif row4 == false:
+			if c5 == true:
+				c5 = false
+				$"Row Letters/Row4/L4".text = ""
+			elif c4 == true:
+				c4 = false
+				$"Row Letters/Row4/L3".text = ""
+			elif c3 == true:
+				c3 = false
+				$"Row Letters/Row4/L5".text = ""
+			elif c2 == true:
+				c2 = false
+				$"Row Letters/Row4/L2".text = ""
+			elif c1 == true:
+				c1 = false
+				$"Row Letters/Row4/L1".text = ""
+		elif row5 == false:
+			if c5 == true:
+				c5 = false
+				$"Row Letters/Row5/L4".text = ""
+			elif c4 == true:
+				c4 = false
+				$"Row Letters/Row5/L3".text = ""
+			elif c3 == true:
+				c3 = false
+				$"Row Letters/Row5/L5".text = ""
+			elif c2 == true:
+				c2 = false
+				$"Row Letters/Row5/L2".text = ""
+			elif c1 == true:
+				c1 = false
+				$"Row Letters/Row5/L1".text = ""
+#endregion
