@@ -1,7 +1,6 @@
 extends Node2D
 
 var words = []
-var used_words = []
 var answer = ""
 var guess = ""
 var row1 = false
@@ -22,41 +21,24 @@ var request = HTTPRequest.new()
 	
 func load_words():
 	var file = FileAccess.open("res://words.txt", FileAccess.READ)
-	
+
 	while not file.eof_reached():
 		var word = file.get_line().strip_edges()
-		
+
 		if word != "":
 			words.append(word)
 
-func save_data():
-	var file = FileAccess.open("user://wordle_save.json", FileAccess.WRITE)
-	file.store_string(JSON.stringify(used_words))
-
-func load_data():
-	if FileAccess.file_exists("user://wordle_save.json"):
-		var file = FileAccess.open("user://wordle_save.json", FileAccess.READ)
-		used_words = JSON.parse_string(file.get_as_text())
+	file.close()
+	
 
 func _ready():
 	load_words()
-	load_data()
 	pick_word()
 	print(answer)
 	$BgBlur/WordShow/Word.text = answer.capitalize()
 
 func pick_word():
-	var available_words = []
-	
-	for word in words:
-		if word not in used_words:
-			available_words.append(word)
-			
-	if available_words.is_empty():
-		used_words.clear()
-		save_data()
-		available_words = words.duplicate()
-	answer = available_words.pick_random()
+	answer = words.pick_random()
 
 func game_over():
 	c1 = false
@@ -70,8 +52,6 @@ func game_over():
 	row3 = true
 	row4 = true
 	row5 = true
-	used_words.append(answer)
-	save_data()
 	$BgBlur.visible = true
 	
 #game actually starting
