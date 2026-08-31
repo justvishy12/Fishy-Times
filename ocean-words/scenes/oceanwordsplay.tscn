@@ -37,7 +37,11 @@ corner_radius_bottom_left = 15
 script = ExtResource("1_au5wn")
 
 [node name="GameBg" type="Sprite2D" parent="." unique_id=385400487]
-position = Vector2(576, 324)
+position = Vector2(210, 327)
+texture = ExtResource("2_y68d8")
+
+[node name="GameBg2" type="Sprite2D" parent="." unique_id=1628944647]
+position = Vector2(1362, 327)
 texture = ExtResource("2_y68d8")
 
 [node name="Rectangle1" type="Sprite2D" parent="." unique_id=2069070029]
