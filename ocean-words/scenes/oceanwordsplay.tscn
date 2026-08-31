@@ -1,0 +1,435 @@
+[gd_scene format=3 uid="uid://byo1ui0617ucq"]
+
+[ext_resource type="Script" uid="uid://dgvvyrc6d2w1v" path="res://scripts/oceanwordsplay.gd" id="1_au5wn"]
+[ext_resource type="Texture2D" uid="uid://b4e1tqelmiua6" path="res://assets/Rectangle 1.png" id="2_qn6of"]
+[ext_resource type="Texture2D" uid="uid://dopp1o3nhmi3w" path="res://assets/BlackWordBG.png" id="3_y68d8"]
+[ext_resource type="FontFile" uid="uid://bl7uaxqknryt6" path="res://fonts/Jua-Regular.ttf" id="4_upy4a"]
+[ext_resource type="Texture2D" uid="uid://dlmg4afb5oycm" path="res://assets/Grey.png" id="5_c4eof"]
+
+[node name="Node2D" type="Node2D" unique_id=986948937]
+script = ExtResource("1_au5wn")
+
+[node name="Rectangle1" type="Sprite2D" parent="." unique_id=2069070029]
+position = Vector2(575.5, 214.5)
+scale = Vector2(0.76851845, 0.54533505)
+texture = ExtResource("2_qn6of")
+
+[node name="Colored Boxes" type="Node2D" parent="." unique_id=501436653]
+position = Vector2(575.5, 214.5)
+scale = Vector2(0.76851845, 0.54533505)
+
+[node name="Row1" type="Node2D" parent="Colored Boxes" unique_id=2123835887]
+position = Vector2(-502.9157, -442.847)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Colored Boxes/Row1" unique_id=312132763]
+modulate = Color(0.15686275, 0.15686275, 0.15686275, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Colored Boxes/Row1" unique_id=1349690866]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Colored Boxes/Row1" unique_id=853084758]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Colored Boxes/Row1" unique_id=1925554358]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Colored Boxes/Row1" unique_id=968024945]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row2" type="Node2D" parent="Colored Boxes" unique_id=1352921390]
+position = Vector2(-502.9157, -310.81808)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Colored Boxes/Row2" unique_id=452183043]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Colored Boxes/Row2" unique_id=625805282]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Colored Boxes/Row2" unique_id=594785195]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Colored Boxes/Row2" unique_id=1210519466]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Colored Boxes/Row2" unique_id=1181267276]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row3" type="Node2D" parent="Colored Boxes" unique_id=955157884]
+position = Vector2(-502.9157, -178.78917)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Colored Boxes/Row3" unique_id=1898890957]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Colored Boxes/Row3" unique_id=1848546136]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Colored Boxes/Row3" unique_id=1909285902]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Colored Boxes/Row3" unique_id=670266783]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Colored Boxes/Row3" unique_id=2144104107]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row4" type="Node2D" parent="Colored Boxes" unique_id=1011166710]
+position = Vector2(-502.9157, -46.760223)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Colored Boxes/Row4" unique_id=95391706]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Colored Boxes/Row4" unique_id=65573252]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Colored Boxes/Row4" unique_id=648225660]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Colored Boxes/Row4" unique_id=2029557228]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Colored Boxes/Row4" unique_id=321157955]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row5" type="Node2D" parent="Colored Boxes" unique_id=963618015]
+position = Vector2(-502.9157, 85.26868)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Colored Boxes/Row5" unique_id=1437140890]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Colored Boxes/Row5" unique_id=1698432782]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Colored Boxes/Row5" unique_id=1516713495]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Colored Boxes/Row5" unique_id=1199414959]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Colored Boxes/Row5" unique_id=1738870783]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row Letters" type="Node2D" parent="." unique_id=1143829051]
+
+[node name="Row1" type="Node2D" parent="Row Letters" unique_id=1227150239]
+
+[node name="L1" type="Label" parent="Row Letters/Row1" unique_id=1011540171]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Row Letters/Row1" unique_id=2121908440]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Row Letters/Row1" unique_id=1368924899]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Row Letters/Row1" unique_id=1845472558]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Row Letters/Row1" unique_id=1476183369]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row2" type="Node2D" parent="Row Letters" unique_id=1670206507]
+position = Vector2(0, 74)
+
+[node name="L1" type="Label" parent="Row Letters/Row2" unique_id=505769765]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Row Letters/Row2" unique_id=1571507014]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Row Letters/Row2" unique_id=394284978]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Row Letters/Row2" unique_id=497644108]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Row Letters/Row2" unique_id=1348933707]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row3" type="Node2D" parent="Row Letters" unique_id=1225635165]
+position = Vector2(0, 148)
+
+[node name="L1" type="Label" parent="Row Letters/Row3" unique_id=630478271]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Row Letters/Row3" unique_id=1684232995]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Row Letters/Row3" unique_id=1845895991]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Row Letters/Row3" unique_id=58268025]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Row Letters/Row3" unique_id=529200477]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row4" type="Node2D" parent="Row Letters" unique_id=1265987791]
+position = Vector2(0, 215)
+
+[node name="L1" type="Label" parent="Row Letters/Row4" unique_id=1177433191]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Row Letters/Row4" unique_id=621464977]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Row Letters/Row4" unique_id=1224695931]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Row Letters/Row4" unique_id=990655007]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Row Letters/Row4" unique_id=609727914]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row5" type="Node2D" parent="Row Letters" unique_id=184199916]
+position = Vector2(0, 287)
+
+[node name="L1" type="Label" parent="Row Letters/Row5" unique_id=1378985312]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Row Letters/Row5" unique_id=90971920]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Row Letters/Row5" unique_id=379968607]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Row Letters/Row5" unique_id=38977573]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Row Letters/Row5" unique_id=1195487564]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="keyboard" type="Sprite2D" parent="." unique_id=56620538]
+position = Vector2(576, 531)
+scale = Vector2(4.075, 2.1050007)
+texture = ExtResource("5_c4eof")
