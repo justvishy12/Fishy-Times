@@ -53,6 +53,7 @@ func game_over():
 	row4 = true
 	row5 = true
 	$BgBlur.visible = true
+	$BgBlur/WordShow.visible = true
 	
 #game actually starting
 func check():
@@ -729,3 +730,14 @@ func _on_delete_pressed() -> void:
 
 func _on_restart_pressed() -> void:
 	get_tree().reload_current_scene()
+
+
+func _on_c_lose_pressed() -> void:
+	$BgBlur/HelpNeed.visible = false
+	$BgBlur.visible = false
+	
+
+
+func _on_info_but_pressed() -> void:
+	$BgBlur.visible = true
+	$BgBlur/HelpNeed.visible = true

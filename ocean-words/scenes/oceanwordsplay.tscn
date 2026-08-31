@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://10bw5bmfpwr1" path="res://assets/GameBG.png" id="2_y68d8"]
 [ext_resource type="Texture2D" uid="uid://dopp1o3nhmi3w" path="res://assets/BlackWordBG.png" id="3_y68d8"]
 [ext_resource type="FontFile" uid="uid://bl7uaxqknryt6" path="res://fonts/Jua-Regular.ttf" id="4_upy4a"]
+[ext_resource type="Texture2D" uid="uid://bdy3v583jeldu" path="res://assets/Info.png" id="6_qn6of"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0kpj8"]
 corner_radius_top_left = 30
@@ -789,8 +790,19 @@ theme_override_font_sizes/font_size = 48
 text = "FISHLE"
 horizontal_alignment = 1
 
+[node name="Info" type="Sprite2D" parent="." unique_id=2041889358]
+position = Vector2(1094, 26)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("6_qn6of")
+
+[node name="InfoBut" type="Button" parent="." unique_id=2057679797]
+modulate = Color(1, 1, 1, 0)
+offset_left = 1072.0
+offset_top = 4.0
+offset_right = 1116.0
+offset_bottom = 48.0
+
 [node name="BgBlur" type="Panel" parent="." unique_id=1315864370]
-visible = false
 offset_left = -184.0
 offset_top = -179.0
 offset_right = 1359.0
@@ -798,6 +810,7 @@ offset_bottom = 783.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_ldxs4")
 
 [node name="WordShow" type="Panel" parent="BgBlur" unique_id=2048314744]
+visible = false
 layout_mode = 0
 offset_left = 532.0
 offset_top = 307.0
@@ -826,16 +839,62 @@ theme_override_fonts/font = ExtResource("4_upy4a")
 theme_override_font_sizes/font_size = 32
 horizontal_alignment = 1
 
-[node name="restart" type="Button" parent="BgBlur" unique_id=156525617]
+[node name="restart" type="Button" parent="BgBlur/WordShow" unique_id=156525617]
 layout_mode = 0
-offset_left = 691.0
-offset_top = 473.0
-offset_right = 830.0
-offset_bottom = 514.0
+offset_left = 159.0
+offset_top = 166.0
+offset_right = 298.0
+offset_bottom = 207.0
 theme_override_fonts/font = ExtResource("4_upy4a")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_w173s")
 text = "RESTART"
+
+[node name="HelpNeed" type="Panel" parent="BgBlur" unique_id=2127993666]
+visible = false
+layout_mode = 0
+offset_left = 532.0
+offset_top = 263.0
+offset_right = 989.0
+offset_bottom = 626.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_upy4a")
+
+[node name="Ifno" type="Label" parent="BgBlur/HelpNeed" unique_id=148785780]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 19.0
+offset_right = 353.0
+offset_bottom = 52.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "HOW TO  PLAY"
+horizontal_alignment = 1
+
+[node name="instructions" type="Label" parent="BgBlur/HelpNeed" unique_id=985184867]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 63.0
+offset_right = 407.0
+offset_bottom = 276.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "Guess a word
+-Green correct letter right spot
+-Yellow correct letter wrong spot
+-Grey letter not in word"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="CLose" type="Button" parent="BgBlur/HelpNeed/instructions" unique_id=1699974468]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 231.0
+offset_right = 241.0
+offset_bottom = 272.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_w173s")
+text = "CLOSE"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=516585584]
 position = Vector2(576, 324)
@@ -871,4 +930,6 @@ libraries/ = SubResource("AnimationLibrary_y68d8")
 [connection signal="pressed" from="OnlineKeybaord/BM" to="." method="_on_bm_pressed"]
 [connection signal="pressed" from="OnlineKeybaord/Enter" to="." method="_on_enter_pressed"]
 [connection signal="pressed" from="OnlineKeybaord/Delete" to="." method="_on_delete_pressed"]
-[connection signal="pressed" from="BgBlur/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="InfoBut" to="." method="_on_info_but_pressed"]
+[connection signal="pressed" from="BgBlur/WordShow/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="BgBlur/HelpNeed/instructions/CLose" to="." method="_on_c_lose_pressed"]
