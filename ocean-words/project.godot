@@ -17,7 +17,6 @@ config/icon="uid://5elsjik8amgu"
 
 [display]
 
-window/size/initial_position_type=0
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
