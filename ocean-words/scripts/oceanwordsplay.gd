@@ -14,6 +14,7 @@ var c2 = false
 var c3 = false
 var c4 = false
 var c5 = false
+var won = false
 var submit_answer = ""
 var game_done = false
 	
@@ -81,14 +82,38 @@ func check():
 		c5 = false
 		if guess[0] == answer[0]:
 			$"Colored Boxes/Row1/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[0] in answer:
+			$"Colored Boxes/Row1/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row1/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
 		if guess[1] == answer[1]:
 			$"Colored Boxes/Row1/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[1] in answer:
+			$"Colored Boxes/Row1/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row1/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
 		if guess[2] == answer[2]:
 			$"Colored Boxes/Row1/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[2] in answer:
+			$"Colored Boxes/Row1/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row1/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
 		if guess[3] == answer[3]:
 			$"Colored Boxes/Row1/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[3] in answer:
+			$"Colored Boxes/Row1/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row1/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
 		if guess[4] == answer[4]:
 			$"Colored Boxes/Row1/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[4] in answer:
+			$"Colored Boxes/Row1/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row1/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
 		guess = ""
 	elif row2 == false:
 		row2 = true
@@ -99,14 +124,38 @@ func check():
 		c5 = false
 		if guess[0] == answer[0]:
 			$"Colored Boxes/Row2/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[0] in answer:
+			$"Colored Boxes/Row2/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row2/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
 		if guess[1] == answer[1]:
 			$"Colored Boxes/Row2/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[1] in answer:
+			$"Colored Boxes/Row2/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row2/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
 		if guess[2] == answer[2]:
 			$"Colored Boxes/Row2/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[2] in answer:
+			$"Colored Boxes/Row2/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row2/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
 		if guess[3] == answer[3]:
 			$"Colored Boxes/Row2/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[3] in answer:
+			$"Colored Boxes/Row2/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row2/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
 		if guess[4] == answer[4]:
 			$"Colored Boxes/Row2/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[4] in answer:
+			$"Colored Boxes/Row2/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row2/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
 		guess = ""
 	elif row3 == false:
 		row3 = true
@@ -117,14 +166,38 @@ func check():
 		c5 = false
 		if guess[0] == answer[0]:
 			$"Colored Boxes/Row3/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[0] in answer:
+			$"Colored Boxes/Row3/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row3/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
 		if guess[1] == answer[1]:
 			$"Colored Boxes/Row3/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[1] in answer:
+			$"Colored Boxes/Row3/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row3/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
 		if guess[2] == answer[2]:
 			$"Colored Boxes/Row3/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[2] in answer:
+			$"Colored Boxes/Row3/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row3/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
 		if guess[3] == answer[3]:
 			$"Colored Boxes/Row3/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[3] in answer:
+			$"Colored Boxes/Row3/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row3/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
 		if guess[4] == answer[4]:
 			$"Colored Boxes/Row3/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[4] in answer:
+			$"Colored Boxes/Row3/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row3/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
 		guess = ""
 	elif row4 == false:
 		row4 = true
@@ -135,14 +208,38 @@ func check():
 		c5 = false
 		if guess[0] == answer[0]:
 			$"Colored Boxes/Row4/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[0] in answer:
+			$"Colored Boxes/Row4/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row4/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
 		if guess[1] == answer[1]:
 			$"Colored Boxes/Row4/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[1] in answer:
+			$"Colored Boxes/Row4/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row4/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
 		if guess[2] == answer[2]:
 			$"Colored Boxes/Row4/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[2] in answer:
+			$"Colored Boxes/Row4/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row4/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
 		if guess[3] == answer[3]:
 			$"Colored Boxes/Row4/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[3] in answer:
+			$"Colored Boxes/Row4/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row4/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
 		if guess[4] == answer[4]:
 			$"Colored Boxes/Row4/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[4] in answer:
+			$"Colored Boxes/Row4/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row4/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
 		guess = ""
 	elif row5 == false:
 		row5 = true
@@ -153,17 +250,45 @@ func check():
 		c5 = false
 		if guess[0] == answer[0]:
 			$"Colored Boxes/Row5/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[0] in answer:
+			$"Colored Boxes/Row5/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row5/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
 		if guess[1] == answer[1]:
 			$"Colored Boxes/Row5/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[1] in answer:
+			$"Colored Boxes/Row5/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row5/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
 		if guess[2] == answer[2]:
 			$"Colored Boxes/Row5/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[2] in answer:
+			$"Colored Boxes/Row5/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row5/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
 		if guess[3] == answer[3]:
 			$"Colored Boxes/Row5/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[3] in answer:
+			$"Colored Boxes/Row5/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row5/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
 		if guess[4] == answer[4]:
 			$"Colored Boxes/Row5/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[4] in answer:
+			$"Colored Boxes/Row5/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Colored Boxes/Row5/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
 		guess = ""
-	if submit_answer == answer:
 		game_over()
+		
+	if submit_answer == answer:
+		won = true
+		game_over()
+	
 func add_letter():
 	if row1 == false:
 		if c1 == false:
