@@ -8,11 +8,14 @@ var row2 = false
 var row3 = false
 var row4 = false
 var row5 = false
+var row6 = false
+
 var c1 = false
 var c2 = false
 var c3 = false
 var c4 = false
 var c5 = false
+
 var won = false
 var submit_answer = ""
 var game_done = false
@@ -35,7 +38,7 @@ func _ready():
 	load_words()
 	pick_word()
 	print(answer)
-	$Control/BgBlur/WordShow/Word.text = answer.capitalize()
+	$Control/Node2D/BgBlur/WordShow/Word.text = answer.capitalize()
 
 
 func pick_word():
@@ -53,8 +56,9 @@ func game_over():
 	row3 = true
 	row4 = true
 	row5 = true
-	$Control/BgBlur.visible = true
-	$Control/BgBlur/WordShow.visible = true
+	row6 = true
+	$Control/Node2D/BgBlur.visible = true
+	$Control/Node2D/BgBlur/WordShow.visible = true
 	
 #game actually starting
 func check():
@@ -62,6 +66,7 @@ func check():
 
 	if submit_answer not in words:
 		print("NOT A WORD")
+		$AnimationPlayer.play("wrong")
 		return
 
 	print("VALID WORD")
@@ -73,39 +78,39 @@ func check():
 		c4 = false
 		c5 = false
 		if guess[0] == answer[0]:
-			$"Control/Colored Boxes/Row1/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[0] in answer:
-			$"Control/Colored Boxes/Row1/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row1/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
 			
 		if guess[1] == answer[1]:
-			$"Control/Colored Boxes/Row1/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[1] in answer:
-			$"Control/Colored Boxes/Row1/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row1/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
 
 		if guess[2] == answer[2]:
-			$"Control/Colored Boxes/Row1/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[2] in answer:
-			$"Control/Colored Boxes/Row1/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row1/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
 
 		if guess[3] == answer[3]:
-			$"Control/Colored Boxes/Row1/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[3] in answer:
-			$"Control/Colored Boxes/Row1/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row1/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
 			
 		if guess[4] == answer[4]:
-			$"Control/Colored Boxes/Row1/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[4] in answer:
-			$"Control/Colored Boxes/Row1/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row1/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row1/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
 		guess = ""
 	elif row2 == false:
 		row2 = true
@@ -115,39 +120,39 @@ func check():
 		c4 = false
 		c5 = false
 		if guess[0] == answer[0]:
-			$"Control/Colored Boxes/Row2/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[0] in answer:
-			$"Control/Colored Boxes/Row2/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row2/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
 			
 		if guess[1] == answer[1]:
-			$"Control/Colored Boxes/Row2/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[1] in answer:
-			$"Control/Colored Boxes/Row2/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row2/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
 
 		if guess[2] == answer[2]:
-			$"Control/Colored Boxes/Row2/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[2] in answer:
-			$"Control/Colored Boxes/Row2/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row2/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
 
 		if guess[3] == answer[3]:
-			$"Control/Colored Boxes/Row2/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[3] in answer:
-			$"Control/Colored Boxes/Row2/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row2/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
 			
 		if guess[4] == answer[4]:
-			$"Control/Colored Boxes/Row2/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[4] in answer:
-			$"Control/Colored Boxes/Row2/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row2/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row2/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
 		guess = ""
 	elif row3 == false:
 		row3 = true
@@ -157,39 +162,39 @@ func check():
 		c4 = false
 		c5 = false
 		if guess[0] == answer[0]:
-			$"Control/Colored Boxes/Row3/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[0] in answer:
-			$"Control/Colored Boxes/Row3/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row3/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
 			
 		if guess[1] == answer[1]:
-			$"Control/Colored Boxes/Row3/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[1] in answer:
-			$"Control/Colored Boxes/Row3/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row3/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
 
 		if guess[2] == answer[2]:
-			$"Control/Colored Boxes/Row3/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[2] in answer:
-			$"Control/Colored Boxes/Row3/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row3/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
 
 		if guess[3] == answer[3]:
-			$"Control/Colored Boxes/Row3/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[3] in answer:
-			$"Control/Colored Boxes/Row3/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row3/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
 			
 		if guess[4] == answer[4]:
-			$"Control/Colored Boxes/Row3/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[4] in answer:
-			$"Control/Colored Boxes/Row3/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row3/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row3/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
 		guess = ""
 	elif row4 == false:
 		row4 = true
@@ -199,39 +204,39 @@ func check():
 		c4 = false
 		c5 = false
 		if guess[0] == answer[0]:
-			$"Control/Colored Boxes/Row4/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[0] in answer:
-			$"Control/Colored Boxes/Row4/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row4/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
 			
 		if guess[1] == answer[1]:
-			$"Control/Colored Boxes/Row4/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[1] in answer:
-			$"Control/Colored Boxes/Row4/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row4/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
 
 		if guess[2] == answer[2]:
-			$"Control/Colored Boxes/Row4/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[2] in answer:
-			$"Control/Colored Boxes/Row4/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row4/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
 
 		if guess[3] == answer[3]:
-			$"Control/Colored Boxes/Row4/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[3] in answer:
-			$"Control/Colored Boxes/Row4/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row4/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
 			
 		if guess[4] == answer[4]:
-			$"Control/Colored Boxes/Row4/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[4] in answer:
-			$"Control/Colored Boxes/Row4/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row4/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row4/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
 		guess = ""
 	elif row5 == false:
 		row5 = true
@@ -241,39 +246,82 @@ func check():
 		c4 = false
 		c5 = false
 		if guess[0] == answer[0]:
-			$"Control/Colored Boxes/Row5/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[0] in answer:
-			$"Control/Colored Boxes/Row5/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row5/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
 			
 		if guess[1] == answer[1]:
-			$"Control/Colored Boxes/Row5/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[1] in answer:
-			$"Control/Colored Boxes/Row5/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row5/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
 
 		if guess[2] == answer[2]:
-			$"Control/Colored Boxes/Row5/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[2] in answer:
-			$"Control/Colored Boxes/Row5/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row5/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
 
 		if guess[3] == answer[3]:
-			$"Control/Colored Boxes/Row5/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[3] in answer:
-			$"Control/Colored Boxes/Row5/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row5/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
 			
 		if guess[4] == answer[4]:
-			$"Control/Colored Boxes/Row5/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
 		elif guess[4] in answer:
-			$"Control/Colored Boxes/Row5/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
 		else:
-			$"Control/Colored Boxes/Row5/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			$"Control/Node2D/Colored Boxes/Row5/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
+		guess = ""
+
+	elif row6 == false:
+		row6 = true
+		c1 = false
+		c2 = false
+		c3 = false
+		c4 = false
+		c5 = false
+		if guess[0] == answer[0]:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord1".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[0] in answer:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord1".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord1".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
+		if guess[1] == answer[1]:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord2".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[1] in answer:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord2".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord2".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
+		if guess[2] == answer[2]:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord3".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[2] in answer:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord3".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord3".modulate = Color(0.49, 0.49, 0.49, 1.0)
+
+		if guess[3] == answer[3]:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord4".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[3] in answer:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord4".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord4".modulate = Color(0.49, 0.49, 0.49, 1.0)
+			
+		if guess[4] == answer[4]:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord5".modulate = Color(0.157, 0.604, 0.157)
+		elif guess[4] in answer:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord5".modulate = Color(0.808, 0.839, 0.275, 1.0)
+		else:
+			$"Control/Node2D/Colored Boxes/Row6/BlackWord5".modulate = Color(0.49, 0.49, 0.49, 1.0)
 		guess = ""
 		game_over()
 		
@@ -285,83 +333,100 @@ func add_letter():
 	if row1 == false:
 		if c1 == false:
 			c1 = true 
-			$"Control/Row Letters/Row1/L1".text = guess[0].to_upper()
+			$"Control/Node2D/Row Letters/Row1/L1".text = guess[0].to_upper()
 		elif c2 == false:
 			c2 = true
-			$"Control/Row Letters/Row1/L2".text = guess[1].to_upper()
+			$"Control/Node2D/Row Letters/Row1/L2".text = guess[1].to_upper()
 		elif c3 == false:
 			c3 = true
-			$"Control/Row Letters/Row1/L5".text = guess[2].to_upper()
+			$"Control/Node2D/Row Letters/Row1/L5".text = guess[2].to_upper()
 		elif c4 == false:
 			c4 = true
-			$"Control/Row Letters/Row1/L3".text = guess[3].to_upper()
+			$"Control/Node2D/Row Letters/Row1/L3".text = guess[3].to_upper()
 		elif c5 == false:
 			c5 = true
-			$"Control/Row Letters/Row1/L4".text = guess[4].to_upper()
+			$"Control/Node2D/Row Letters/Row1/L4".text = guess[4].to_upper()
 	elif row2 == false:
 		if c1 == false:
 			c1 = true
-			$"Control/Row Letters/Row2/L1".text = guess[0].to_upper()
+			$"Control/Node2D/Row Letters/Row2/L1".text = guess[0].to_upper()
 		elif c2 == false:
 			c2 = true
-			$"Control/Row Letters/Row2/L2".text = guess[1].to_upper()
+			$"Control/Node2D/Row Letters/Row2/L2".text = guess[1].to_upper()
 		elif c3 == false:
 			c3 = true
-			$"Control/Row Letters/Row2/L5".text = guess[2].to_upper()
+			$"Control/Node2D/Row Letters/Row2/L5".text = guess[2].to_upper()
 		elif c4 == false:
 			c4 = true
-			$"Control/Row Letters/Row2/L3".text = guess[3].to_upper()
+			$"Control/Node2D/Row Letters/Row2/L3".text = guess[3].to_upper()
 		elif c5 == false:
 			c5 = true
-			$"Control/Row Letters/Row2/L4".text = guess[4].to_upper()
+			$"Control/Node2D/Row Letters/Row2/L4".text = guess[4].to_upper()
 	elif row3 == false:
 		if c1 == false:
 			c1 = true
-			$"Control/Row Letters/Row3/L1".text = guess[0].to_upper()
+			$"Control/Node2D/Row Letters/Row3/L1".text = guess[0].to_upper()
 		elif c2 == false:
 			c2 = true
-			$"Control/Row Letters/Row3/L2".text = guess[1].to_upper()
+			$"Control/Node2D/Row Letters/Row3/L2".text = guess[1].to_upper()
 		elif c3 == false:
 			c3 = true
-			$"Control/Row Letters/Row3/L5".text = guess[2].to_upper()
+			$"Control/Node2D/Row Letters/Row3/L5".text = guess[2].to_upper()
 		elif c4 == false:
 			c4 = true
-			$"Control/Row Letters/Row3/L3".text = guess[3].to_upper()
+			$"Control/Node2D/Row Letters/Row3/L3".text = guess[3].to_upper()
 		elif c5 == false:
 			c5 = true
-			$"Control/Row Letters/Row3/L4".text = guess[4].to_upper()
+			$"Control/Node2D/Row Letters/Row3/L4".text = guess[4].to_upper()
 	elif row4 == false:
 		if c1 == false:
 			c1 = true
-			$"Control/Row Letters/Row4/L1".text = guess[0].to_upper()
+			$"Control/Node2D/Row Letters/Row4/L1".text = guess[0].to_upper()
 		elif c2 == false:
 			c2 = true
-			$"Control/Row Letters/Row4/L2".text = guess[1].to_upper()
+			$"Control/Node2D/Row Letters/Row4/L2".text = guess[1].to_upper()
 		elif c3 == false:
 			c3 = true
-			$"Control/Row Letters/Row4/L5".text = guess[2].to_upper()
+			$"Control/Node2D/Row Letters/Row4/L5".text = guess[2].to_upper()
 		elif c4 == false:
 			c4 = true
-			$"Control/Row Letters/Row4/L3".text = guess[3].to_upper()
+			$"Control/Node2D/Row Letters/Row4/L3".text = guess[3].to_upper()
 		elif c5 == false:
 			c5 = true
-			$"Control/Row Letters/Row4/L4".text = guess[4].to_upper()
+			$"Control/Node2D/Row Letters/Row4/L4".text = guess[4].to_upper()
 	elif row5 == false:
 		if c1 == false:
 			c1 = true
-			$"Control/Row Letters/Row5/L1".text = guess[0].to_upper()
+			$"Control/Node2D/Row Letters/Row5/L1".text = guess[0].to_upper()
 		elif c2 == false:
 			c2 = true
-			$"Control/Row Letters/Row5/L2".text = guess[1].to_upper()
+			$"Control/Node2D/Row Letters/Row5/L2".text = guess[1].to_upper()
 		elif c3 == false:
 			c3 = true
-			$"Control/Row Letters/Row5/L5".text = guess[2].to_upper()
+			$"Control/Node2D/Row Letters/Row5/L5".text = guess[2].to_upper()
 		elif c4 == false:
 			c4 = true
-			$"Control/Row Letters/Row5/L3".text = guess[3].to_upper()
+			$"Control/Node2D/Row Letters/Row5/L3".text = guess[3].to_upper()
 		elif c5 == false:
 			c5 = true
-			$"Control/Row Letters/Row5/L4".text = guess[4].to_upper()
+			$"Control/Node2D/Row Letters/Row5/L4".text = guess[4].to_upper()
+	elif row6 == false:
+		if c1 == false:
+			c1 = true
+			$"Control/Node2D/Row Letters/Row6/L1".text = guess[0].to_upper()
+		elif c2 == false:
+			c2 = true
+			$"Control/Node2D/Row Letters/Row6/L2".text = guess[1].to_upper()
+		elif c3 == false:
+			c3 = true
+			$"Control/Node2D/Row Letters/Row6/L5".text = guess[2].to_upper()
+		elif c4 == false:
+			c4 = true
+			$"Control/Node2D/Row Letters/Row6/L3".text = guess[3].to_upper()
+		elif c5 == false:
+			c5 = true
+			$"Control/Node2D/Row Letters/Row6/L4".text = guess[4].to_upper()
+
 			
 func _input(event):
 	if event.is_action_pressed("enter") and guess.length() == 5:
@@ -451,83 +516,99 @@ func _input(event):
 			if row1 == false:
 				if c5 == true:
 					c5 = false
-					$"Control/Row Letters/Row1/L4".text = ""
+					$"Control/Node2D/Row Letters/Row1/L4".text = ""
 				elif c4 == true:
 					c4 = false
-					$"Control/Row Letters/Row1/L3".text = ""
+					$"Control/Node2D/Row Letters/Row1/L3".text = ""
 				elif c3 == true:
 					c3 = false
-					$"Control/Row Letters/Row1/L5".text = ""
+					$"Control/Node2D/Row Letters/Row1/L5".text = ""
 				elif c2 == true:
 					c2 = false
-					$"Control/Row Letters/Row1/L2".text = ""
+					$"Control/Node2D/Row Letters/Row1/L2".text = ""
 				elif c1 == true:
 					c1 = false
-					$"Control/Row Letters/Row1/L1".text = ""
+					$"Control/Node2D/Row Letters/Row1/L1".text = ""
 			elif row2 == false:
 				if c5 == true:
 					c5 = false
-					$"Control/Row Letters/Row2/L4".text = ""
+					$"Control/Node2D/Row Letters/Row2/L4".text = ""
 				elif c4 == true:
 					c4 = false
-					$"Control/Row Letters/Row2/L3".text = ""
+					$"Control/Node2D/Row Letters/Row2/L3".text = ""
 				elif c3 == true:
 					c3 = false
-					$"Control/Row Letters/Row2/L5".text = ""
+					$"Control/Node2D/Row Letters/Row2/L5".text = ""
 				elif c2 == true:
 					c2 = false
-					$"Control/Row Letters/Row2/L2".text = ""
+					$"Control/Node2D/Row Letters/Row2/L2".text = ""
 				elif c1 == true:
 					c1 = false
-					$"Control/Row Letters/Row2/L1".text = ""
+					$"Control/Node2D/Row Letters/Row2/L1".text = ""
 			elif row3 == false:
 				if c5 == true:
 					c5 = false
-					$"Control/Row Letters/Row3/L4".text = ""
+					$"Control/Node2D/Row Letters/Row3/L4".text = ""
 				elif c4 == true:
 					c4 = false
-					$"Control/Row Letters/Row3/L3".text = ""
+					$"Control/Node2D/Row Letters/Row3/L3".text = ""
 				elif c3 == true:
 					c3 = false
-					$"Control/Row Letters/Row3/L5".text = ""
+					$"Control/Node2D/Row Letters/Row3/L5".text = ""
 				elif c2 == true:
 					c2 = false
-					$"Control/Row Letters/Row3/L2".text = ""
+					$"Control/Node2D/Row Letters/Row3/L2".text = ""
 				elif c1 == true:
 					c1 = false
-					$"Control/Row Letters/Row3/L1".text = ""
+					$"Control/Node2D/Row Letters/Row3/L1".text = ""
 			elif row4 == false:
 				if c5 == true:
 					c5 = false
-					$"Control/Row Letters/Row4/L4".text = ""
+					$"Control/Node2D/Row Letters/Row4/L4".text = ""
 				elif c4 == true:
 					c4 = false
-					$"Control/Row Letters/Row4/L3".text = ""
+					$"Control/Node2D/Row Letters/Row4/L3".text = ""
 				elif c3 == true:
 					c3 = false
-					$"Control/Row Letters/Row4/L5".text = ""
+					$"Control/Node2D/Row Letters/Row4/L5".text = ""
 				elif c2 == true:
 					c2 = false
-					$"Control/Row Letters/Row4/L2".text = ""
+					$"Control/Node2D/Row Letters/Row4/L2".text = ""
 				elif c1 == true:
 					c1 = false
-					$"Control/Row Letters/Row4/L1".text = ""
+					$"Control/Node2D/Row Letters/Row4/L1".text = ""
 			elif row5 == false:
 				if c5 == true:
 					c5 = false
-					$"Control/Row Letters/Row5/L4".text = ""
+					$"Control/Node2D/Row Letters/Row5/L4".text = ""
 				elif c4 == true:
 					c4 = false
-					$"Control/Row Letters/Row5/L3".text = ""
+					$"Control/Node2D/Row Letters/Row5/L3".text = ""
 				elif c3 == true:
 					c3 = false
-					$"Control/Row Letters/Row5/L5".text = ""
+					$"Control/Node2D/Row Letters/Row5/L5".text = ""
 				elif c2 == true:
 					c2 = false
-					$"Control/Row Letters/Row5/L2".text = ""
+					$"Control/Node2D/Row Letters/Row5/L2".text = ""
 				elif c1 == true:
 					c1 = false
-					$"Control/Row Letters/Row5/L1".text = ""
+					$"Control/Node2D/Row Letters/Row5/L1".text = ""
+			elif row6 == false:
+				if c5 == true:
+					c5 = false
+					$"Control/Node2D/Row Letters/Row6/L4".text = ""
+				elif c4 == true:
+					c4 = false
+					$"Control/Node2D/Row Letters/Row6/L3".text = ""
+				elif c3 == true:
+					c3 = false
+					$"Control/Node2D/Row Letters/Row6/L5".text = ""
+				elif c2 == true:
+					c2 = false
+					$"Control/Node2D/Row Letters/Row6/L2".text = ""
+				elif c1 == true:
+					c1 = false
+					$"Control/Node2D/Row Letters/Row6/L1".text = ""
 				
 
 
@@ -648,83 +729,99 @@ func _on_delete_pressed() -> void:
 		if row1 == false:
 			if c5 == true:
 				c5 = false
-				$"Control/Row Letters/Row1/L4".text = ""
+				$"Control/Node2D/Row Letters/Row1/L4".text = ""
 			elif c4 == true:
 				c4 = false
-				$"Control/Row Letters/Row1/L3".text = ""
+				$"Control/Node2D/Row Letters/Row1/L3".text = ""
 			elif c3 == true:
 				c3 = false
-				$"Control/Row Letters/Row1/L5".text = ""
+				$"Control/Node2D/Row Letters/Row1/L5".text = ""
 			elif c2 == true:
 				c2 = false
-				$"Control/Row Letters/Row1/L2".text = ""
+				$"Control/Node2D/Row Letters/Row1/L2".text = ""
 			elif c1 == true:
 				c1 = false
-				$"Control/Row Letters/Row1/L1".text = ""
+				$"Control/Node2D/Row Letters/Row1/L1".text = ""
 		elif row2 == false:
 			if c5 == true:
 				c5 = false
-				$"Control/Row Letters/Row2/L4".text = ""
+				$"Control/Node2D/Row Letters/Row2/L4".text = ""
 			elif c4 == true:
 				c4 = false
-				$"Control/Row Letters/Row2/L3".text = ""
+				$"Control/Node2D/Row Letters/Row2/L3".text = ""
 			elif c3 == true:
 				c3 = false
-				$"Control/Row Letters/Row2/L5".text = ""
+				$"Control/Node2D/Row Letters/Row2/L5".text = ""
 			elif c2 == true:
 				c2 = false
-				$"Control/Row Letters/Row2/L2".text = ""
+				$"Control/Node2D/Row Letters/Row2/L2".text = ""
 			elif c1 == true:
 				c1 = false
-				$"Control/Row Letters/Row2/L1".text = ""
+				$"Control/Node2D/Row Letters/Row2/L1".text = ""
 		elif row3 == false:
 			if c5 == true:
 				c5 = false
-				$"Control/Row Letters/Row3/L4".text = ""
+				$"Control/Node2D/Row Letters/Row3/L4".text = ""
 			elif c4 == true:
 				c4 = false
-				$"Control/Row Letters/Row3/L3".text = ""
+				$"Control/Node2D/Row Letters/Row3/L3".text = ""
 			elif c3 == true:
 				c3 = false
-				$"Control/Row Letters/Row3/L5".text = ""
+				$"Control/Node2D/Row Letters/Row3/L5".text = ""
 			elif c2 == true:
 				c2 = false
-				$"Control/Row Letters/Row3/L2".text = ""
+				$"Control/Node2D/Row Letters/Row3/L2".text = ""
 			elif c1 == true:
 				c1 = false
-				$"Control/Row Letters/Row3/L1".text = ""
+				$"Control/Node2D/Row Letters/Row3/L1".text = ""
 		elif row4 == false:
 			if c5 == true:
 				c5 = false
-				$"Control/Row Letters/Row4/L4".text = ""
+				$"Control/Node2D/Row Letters/Row4/L4".text = ""
 			elif c4 == true:
 				c4 = false
-				$"Control/Row Letters/Row4/L3".text = ""
+				$"Control/Node2D/Row Letters/Row4/L3".text = ""
 			elif c3 == true:
 				c3 = false
-				$"Control/Row Letters/Row4/L5".text = ""
+				$"Control/Node2D/Row Letters/Row4/L5".text = ""
 			elif c2 == true:
 				c2 = false
-				$"Control/Row Letters/Row4/L2".text = ""
+				$"Control/Node2D/Row Letters/Row4/L2".text = ""
 			elif c1 == true:
 				c1 = false
-				$"Control/Row Letters/Row4/L1".text = ""
+				$"Control/Node2D/Row Letters/Row4/L1".text = ""
 		elif row5 == false:
 			if c5 == true:
 				c5 = false
-				$"Control/Row Letters/Row5/L4".text = ""
+				$"Control/Node2D/Row Letters/Row5/L4".text = ""
 			elif c4 == true:
 				c4 = false
-				$"Control/Row Letters/Row5/L3".text = ""
+				$"Control/Node2D/Row Letters/Row5/L3".text = ""
 			elif c3 == true:
 				c3 = false
-				$"Control/Row Letters/Row5/L5".text = ""
+				$"Control/Node2D/Row Letters/Row5/L5".text = ""
 			elif c2 == true:
 				c2 = false
-				$"Control/Row Letters/Row5/L2".text = ""
+				$"Control/Node2D/Row Letters/Row5/L2".text = ""
 			elif c1 == true:
 				c1 = false
-				$"Control/Row Letters/Row5/L1".text = ""
+				$"Control/Node2D/Row Letters/Row5/L1".text = ""
+		elif row6 == false:
+			if c5 == true:
+				c5 = false
+				$"Control/Node2D/Row Letters/Row6/L4".text = ""
+			elif c4 == true:
+				c4 = false
+				$"Control/Node2D/Row Letters/Row6/L3".text = ""
+			elif c3 == true:
+				c3 = false
+				$"Control/Node2D/Row Letters/Row6/L5".text = ""
+			elif c2 == true:
+				c2 = false
+				$"Control/Node2D/Row Letters/Row6/L2".text = ""
+			elif c1 == true:
+				c1 = false
+				$"Control/Node2D/Row Letters/Row6/L1".text = ""
 #endregion
 
 
@@ -733,11 +830,11 @@ func _on_restart_pressed() -> void:
 
 
 func _on_c_lose_pressed() -> void:
-	$Control/BgBlur/HelpNeed.visible = false
-	$Control/BgBlur.visible = false
+	$Control/Node2D/BgBlur/HelpNeed.visible = false
+	$Control/Node2D/BgBlur.visible = false
 	
 
 
 func _on_info_but_pressed() -> void:
-	$Control/BgBlur.visible = true
-	$Control/BgBlur/HelpNeed.visible = true
+	$Control/Node2D/BgBlur.visible = true
+	$Control/Node2D/BgBlur/HelpNeed.visible = true
