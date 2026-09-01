@@ -62,7 +62,6 @@ func check():
 
 	if submit_answer not in words:
 		print("NOT A WORD")
-		$AnimationPlayer.play("camera_shake")
 		return
 
 	print("VALID WORD")
