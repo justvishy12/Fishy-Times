@@ -39,7 +39,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Node2D/Rectangle1:offset")
+tracks/0/path = NodePath("Control/Node2D/Rectangle1:offset")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -55,7 +55,7 @@ length = 0.41
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Node2D/Rectangle1:offset")
+tracks/0/path = NodePath("Control/Node2D/Rectangle1:offset")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -74,969 +74,6 @@ _data = {
 [node name="Node2D" type="Node2D" unique_id=986948937]
 script = ExtResource("1_au5wn")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=227328415]
-position = Vector2(640, 360)
-
-[node name="Node2D" type="Node2D" parent="." unique_id=1651600405]
-position = Vector2(64, 0)
-
-[node name="BG" type="Node2D" parent="Node2D" unique_id=154283770]
-position = Vector2(-64, 0)
-
-[node name="GameBg" type="Sprite2D" parent="Node2D/BG" unique_id=385400487]
-position = Vector2(210, 324)
-texture = ExtResource("2_y68d8")
-
-[node name="GameBg" type="Sprite2D" parent="Node2D/BG/GameBg" unique_id=1406530163]
-position = Vector2(-819, -6)
-texture = ExtResource("2_y68d8")
-
-[node name="GameBg" type="Sprite2D" parent="Node2D/BG/GameBg/GameBg" unique_id=869514642]
-position = Vector2(-90, 628)
-texture = ExtResource("2_y68d8")
-
-[node name="GameBg" type="Sprite2D" parent="Node2D/BG/GameBg/GameBg/GameBg" unique_id=2001876253]
-position = Vector2(2521, 26)
-texture = ExtResource("2_y68d8")
-
-[node name="GameBg6" type="Sprite2D" parent="Node2D/BG" unique_id=1373471919]
-position = Vector2(-307, -324)
-texture = ExtResource("2_y68d8")
-
-[node name="GameBg3" type="Sprite2D" parent="Node2D/BG" unique_id=2100416686]
-position = Vector2(480, -324)
-texture = ExtResource("2_y68d8")
-
-[node name="GameBg4" type="Sprite2D" parent="Node2D/BG" unique_id=1961514106]
-position = Vector2(1332, -320)
-texture = ExtResource("2_y68d8")
-
-[node name="GameBg7" type="Sprite2D" parent="Node2D/BG" unique_id=533693690]
-position = Vector2(176, 966)
-texture = ExtResource("2_y68d8")
-
-[node name="GameBg8" type="Sprite2D" parent="Node2D/BG" unique_id=1625404545]
-position = Vector2(1028, 970)
-texture = ExtResource("2_y68d8")
-
-[node name="GameBg2" type="Sprite2D" parent="Node2D/BG" unique_id=1628944647]
-position = Vector2(1362, 324)
-texture = ExtResource("2_y68d8")
-
-[node name="Rectangle1" type="Sprite2D" parent="Node2D" unique_id=2069070029]
-modulate = Color(0, 0.39226744, 0.68771255, 1)
-position = Vector2(575.5, 261.00003)
-scale = Vector2(0.76851845, 0.6675427)
-texture = ExtResource("2_qn6of")
-offset = Vector2(4, 4)
-
-[node name="Colored Boxes" type="Node2D" parent="Node2D" unique_id=501436653]
-position = Vector2(575.5, 254.5)
-scale = Vector2(0.76851845, 0.54533505)
-
-[node name="Row1" type="Node2D" parent="Node2D/Colored Boxes" unique_id=2123835887]
-position = Vector2(-502.9157, -442.847)
-scale = Vector2(0.8696659, 1.2255847)
-
-[node name="BlackWord1" type="Sprite2D" parent="Node2D/Colored Boxes/Row1" unique_id=312132763]
-modulate = Color(0.15686275, 0.15686275, 0.15686275, 1)
-position = Vector2(365, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord2" type="Sprite2D" parent="Node2D/Colored Boxes/Row1" unique_id=1349690866]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(472, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord3" type="Sprite2D" parent="Node2D/Colored Boxes/Row1" unique_id=853084758]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(579, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord4" type="Sprite2D" parent="Node2D/Colored Boxes/Row1" unique_id=1925554358]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(685, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord5" type="Sprite2D" parent="Node2D/Colored Boxes/Row1" unique_id=968024945]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(791, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="Row2" type="Node2D" parent="Node2D/Colored Boxes" unique_id=1352921390]
-position = Vector2(-502.9157, -310.81808)
-scale = Vector2(0.8696659, 1.2255847)
-
-[node name="BlackWord1" type="Sprite2D" parent="Node2D/Colored Boxes/Row2" unique_id=452183043]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(365, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord2" type="Sprite2D" parent="Node2D/Colored Boxes/Row2" unique_id=625805282]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(472, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord3" type="Sprite2D" parent="Node2D/Colored Boxes/Row2" unique_id=594785195]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(579, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord4" type="Sprite2D" parent="Node2D/Colored Boxes/Row2" unique_id=1210519466]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(685, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord5" type="Sprite2D" parent="Node2D/Colored Boxes/Row2" unique_id=1181267276]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(791, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="Row3" type="Node2D" parent="Node2D/Colored Boxes" unique_id=955157884]
-position = Vector2(-502.9157, -178.78917)
-scale = Vector2(0.8696659, 1.2255847)
-
-[node name="BlackWord1" type="Sprite2D" parent="Node2D/Colored Boxes/Row3" unique_id=1898890957]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(365, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord2" type="Sprite2D" parent="Node2D/Colored Boxes/Row3" unique_id=1848546136]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(472, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord3" type="Sprite2D" parent="Node2D/Colored Boxes/Row3" unique_id=1909285902]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(579, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord4" type="Sprite2D" parent="Node2D/Colored Boxes/Row3" unique_id=670266783]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(685, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord5" type="Sprite2D" parent="Node2D/Colored Boxes/Row3" unique_id=2144104107]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(791, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="Row4" type="Node2D" parent="Node2D/Colored Boxes" unique_id=1011166710]
-position = Vector2(-502.9157, -46.760223)
-scale = Vector2(0.8696659, 1.2255847)
-
-[node name="BlackWord1" type="Sprite2D" parent="Node2D/Colored Boxes/Row4" unique_id=95391706]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(365, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord2" type="Sprite2D" parent="Node2D/Colored Boxes/Row4" unique_id=65573252]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(472, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord3" type="Sprite2D" parent="Node2D/Colored Boxes/Row4" unique_id=648225660]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(579, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord4" type="Sprite2D" parent="Node2D/Colored Boxes/Row4" unique_id=2029557228]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(685, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord5" type="Sprite2D" parent="Node2D/Colored Boxes/Row4" unique_id=321157955]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(791, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="Row5" type="Node2D" parent="Node2D/Colored Boxes" unique_id=963618015]
-position = Vector2(-502.9157, 85.26868)
-scale = Vector2(0.8696659, 1.2255847)
-
-[node name="BlackWord1" type="Sprite2D" parent="Node2D/Colored Boxes/Row5" unique_id=1437140890]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(365, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord2" type="Sprite2D" parent="Node2D/Colored Boxes/Row5" unique_id=1698432782]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(472, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord3" type="Sprite2D" parent="Node2D/Colored Boxes/Row5" unique_id=1516713495]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(579, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord4" type="Sprite2D" parent="Node2D/Colored Boxes/Row5" unique_id=1199414959]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(685, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord5" type="Sprite2D" parent="Node2D/Colored Boxes/Row5" unique_id=1738870783]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(791, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="Row6" type="Node2D" parent="Node2D/Colored Boxes" unique_id=1485523999]
-position = Vector2(-502.9157, 215.46396)
-scale = Vector2(0.8696659, 1.2255847)
-
-[node name="BlackWord1" type="Sprite2D" parent="Node2D/Colored Boxes/Row6" unique_id=455029525]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(365, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord2" type="Sprite2D" parent="Node2D/Colored Boxes/Row6" unique_id=69426644]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(472, 152)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord3" type="Sprite2D" parent="Node2D/Colored Boxes/Row6" unique_id=1348323105]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(579, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord4" type="Sprite2D" parent="Node2D/Colored Boxes/Row6" unique_id=1327303226]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(685, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="BlackWord5" type="Sprite2D" parent="Node2D/Colored Boxes/Row6" unique_id=1939713746]
-modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
-position = Vector2(791, 153)
-texture = ExtResource("3_y68d8")
-
-[node name="Row Letters" type="Node2D" parent="Node2D" unique_id=1143829051]
-position = Vector2(0, 40)
-
-[node name="Row1" type="Node2D" parent="Node2D/Row Letters" unique_id=1227150239]
-
-[node name="L1" type="Label" parent="Node2D/Row Letters/Row1" unique_id=1011540171]
-offset_left = 416.0
-offset_top = 51.0
-offset_right = 450.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L2" type="Label" parent="Node2D/Row Letters/Row1" unique_id=2121908440]
-offset_left = 488.0
-offset_top = 51.0
-offset_right = 522.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L3" type="Label" parent="Node2D/Row Letters/Row1" unique_id=1368924899]
-offset_left = 630.0
-offset_top = 51.0
-offset_right = 664.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L4" type="Label" parent="Node2D/Row Letters/Row1" unique_id=1845472558]
-offset_left = 700.0
-offset_top = 51.0
-offset_right = 734.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L5" type="Label" parent="Node2D/Row Letters/Row1" unique_id=1476183369]
-offset_left = 559.0
-offset_top = 51.0
-offset_right = 593.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Row2" type="Node2D" parent="Node2D/Row Letters" unique_id=1670206507]
-position = Vector2(0, 74)
-
-[node name="L1" type="Label" parent="Node2D/Row Letters/Row2" unique_id=505769765]
-offset_left = 416.0
-offset_top = 51.0
-offset_right = 450.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L2" type="Label" parent="Node2D/Row Letters/Row2" unique_id=1571507014]
-offset_left = 488.0
-offset_top = 51.0
-offset_right = 522.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L3" type="Label" parent="Node2D/Row Letters/Row2" unique_id=394284978]
-offset_left = 630.0
-offset_top = 51.0
-offset_right = 664.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L4" type="Label" parent="Node2D/Row Letters/Row2" unique_id=497644108]
-offset_left = 700.0
-offset_top = 51.0
-offset_right = 734.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L5" type="Label" parent="Node2D/Row Letters/Row2" unique_id=1348933707]
-offset_left = 559.0
-offset_top = 51.0
-offset_right = 593.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Row3" type="Node2D" parent="Node2D/Row Letters" unique_id=1225635165]
-position = Vector2(0, 148)
-
-[node name="L1" type="Label" parent="Node2D/Row Letters/Row3" unique_id=630478271]
-offset_left = 416.0
-offset_top = 51.0
-offset_right = 450.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L2" type="Label" parent="Node2D/Row Letters/Row3" unique_id=1684232995]
-offset_left = 488.0
-offset_top = 51.0
-offset_right = 522.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L3" type="Label" parent="Node2D/Row Letters/Row3" unique_id=1845895991]
-offset_left = 630.0
-offset_top = 51.0
-offset_right = 664.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L4" type="Label" parent="Node2D/Row Letters/Row3" unique_id=58268025]
-offset_left = 700.0
-offset_top = 51.0
-offset_right = 734.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L5" type="Label" parent="Node2D/Row Letters/Row3" unique_id=529200477]
-offset_left = 559.0
-offset_top = 51.0
-offset_right = 593.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Row4" type="Node2D" parent="Node2D/Row Letters" unique_id=1265987791]
-position = Vector2(0, 215)
-
-[node name="L1" type="Label" parent="Node2D/Row Letters/Row4" unique_id=1177433191]
-offset_left = 416.0
-offset_top = 51.0
-offset_right = 450.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L2" type="Label" parent="Node2D/Row Letters/Row4" unique_id=621464977]
-offset_left = 488.0
-offset_top = 51.0
-offset_right = 522.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L3" type="Label" parent="Node2D/Row Letters/Row4" unique_id=1224695931]
-offset_left = 630.0
-offset_top = 51.0
-offset_right = 664.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L4" type="Label" parent="Node2D/Row Letters/Row4" unique_id=990655007]
-offset_left = 700.0
-offset_top = 51.0
-offset_right = 734.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L5" type="Label" parent="Node2D/Row Letters/Row4" unique_id=609727914]
-offset_left = 559.0
-offset_top = 51.0
-offset_right = 593.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Row5" type="Node2D" parent="Node2D/Row Letters" unique_id=184199916]
-position = Vector2(0, 287)
-
-[node name="L1" type="Label" parent="Node2D/Row Letters/Row5" unique_id=1378985312]
-offset_left = 416.0
-offset_top = 51.0
-offset_right = 450.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L2" type="Label" parent="Node2D/Row Letters/Row5" unique_id=90971920]
-offset_left = 488.0
-offset_top = 51.0
-offset_right = 522.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L3" type="Label" parent="Node2D/Row Letters/Row5" unique_id=379968607]
-offset_left = 630.0
-offset_top = 51.0
-offset_right = 664.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L4" type="Label" parent="Node2D/Row Letters/Row5" unique_id=38977573]
-offset_left = 700.0
-offset_top = 51.0
-offset_right = 734.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L5" type="Label" parent="Node2D/Row Letters/Row5" unique_id=1195487564]
-offset_left = 559.0
-offset_top = 51.0
-offset_right = 593.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Row6" type="Node2D" parent="Node2D/Row Letters" unique_id=1156624540]
-position = Vector2(0, 355)
-
-[node name="L1" type="Label" parent="Node2D/Row Letters/Row6" unique_id=1250510499]
-offset_left = 416.0
-offset_top = 51.0
-offset_right = 450.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L2" type="Label" parent="Node2D/Row Letters/Row6" unique_id=1392192187]
-offset_left = 488.0
-offset_top = 51.0
-offset_right = 522.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L3" type="Label" parent="Node2D/Row Letters/Row6" unique_id=1311696619]
-offset_left = 630.0
-offset_top = 51.0
-offset_right = 664.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L4" type="Label" parent="Node2D/Row Letters/Row6" unique_id=1894705621]
-offset_left = 700.0
-offset_top = 51.0
-offset_right = 734.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="L5" type="Label" parent="Node2D/Row Letters/Row6" unique_id=895284803]
-offset_left = 559.0
-offset_top = 51.0
-offset_right = 593.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Keyboard" type="Panel" parent="Node2D" unique_id=2127491251]
-offset_left = 366.0
-offset_top = 529.0
-offset_right = 787.0
-offset_bottom = 702.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_0kpj8")
-metadata/_edit_use_anchors_ = true
-
-[node name="OnlineKeybaord" type="Node2D" parent="Node2D" unique_id=721609453]
-position = Vector2(0, 87)
-
-[node name="BQ" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1023731412]
-offset_left = 395.0
-offset_top = 460.99997
-offset_right = 424.0
-offset_bottom = 501.99997
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "Q"
-
-[node name="BW" type="Button" parent="Node2D/OnlineKeybaord" unique_id=729146455]
-offset_left = 432.0
-offset_top = 460.99997
-offset_right = 466.0
-offset_bottom = 501.99997
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "W"
-
-[node name="BE" type="Button" parent="Node2D/OnlineKeybaord" unique_id=512640136]
-offset_left = 472.0
-offset_top = 461.0
-offset_right = 499.0
-offset_bottom = 502.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "E"
-
-[node name="BR" type="Button" parent="Node2D/OnlineKeybaord" unique_id=169678082]
-offset_left = 504.0
-offset_top = 460.99997
-offset_right = 531.0
-offset_bottom = 501.99997
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "R"
-
-[node name="BT" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1709642743]
-offset_left = 542.0
-offset_top = 460.99997
-offset_right = 571.0
-offset_bottom = 501.99997
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "T"
-
-[node name="BY" type="Button" parent="Node2D/OnlineKeybaord" unique_id=112512472]
-offset_left = 580.99994
-offset_top = 460.99997
-offset_right = 608.99994
-offset_bottom = 501.99997
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "Y"
-
-[node name="BU" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1809748773]
-offset_left = 617.99994
-offset_top = 460.99997
-offset_right = 645.99994
-offset_bottom = 501.99997
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "U"
-
-[node name="BI" type="Button" parent="Node2D/OnlineKeybaord" unique_id=326035842]
-offset_left = 657.0
-offset_top = 461.0
-offset_right = 685.0
-offset_bottom = 502.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "I"
-
-[node name="BO" type="Button" parent="Node2D/OnlineKeybaord" unique_id=547826453]
-offset_left = 691.99994
-offset_top = 460.99997
-offset_right = 719.99994
-offset_bottom = 501.99997
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "O"
-
-[node name="BP" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1856572027]
-offset_left = 729.99994
-offset_top = 460.99997
-offset_right = 756.99994
-offset_bottom = 501.99997
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "P"
-
-[node name="BA" type="Button" parent="Node2D/OnlineKeybaord" unique_id=2020918525]
-offset_left = 415.99997
-offset_top = 507.0
-offset_right = 445.99997
-offset_bottom = 548.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "A"
-
-[node name="BS" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1105729430]
-offset_left = 452.99997
-offset_top = 507.0
-offset_right = 479.99997
-offset_bottom = 548.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "S"
-
-[node name="BD" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1229576420]
-offset_left = 488.99997
-offset_top = 507.0
-offset_right = 516.0
-offset_bottom = 548.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "D"
-
-[node name="BF" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1621880571]
-offset_left = 525.0
-offset_top = 507.0
-offset_right = 552.0
-offset_bottom = 548.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "F"
-
-[node name="BG" type="Button" parent="Node2D/OnlineKeybaord" unique_id=536252733]
-offset_left = 563.0
-offset_top = 507.0
-offset_right = 594.0
-offset_bottom = 548.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "G"
-
-[node name="BH" type="Button" parent="Node2D/OnlineKeybaord" unique_id=563049364]
-offset_left = 601.0
-offset_top = 507.0
-offset_right = 628.0
-offset_bottom = 548.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "H"
-
-[node name="BJ" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1021552612]
-offset_left = 637.99994
-offset_top = 507.0
-offset_right = 665.99994
-offset_bottom = 548.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "J"
-
-[node name="BK" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1420776601]
-offset_left = 674.99994
-offset_top = 507.0
-offset_right = 705.0
-offset_bottom = 548.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "K"
-
-[node name="BL" type="Button" parent="Node2D/OnlineKeybaord" unique_id=610103297]
-offset_left = 711.99994
-offset_top = 507.0
-offset_right = 739.0
-offset_bottom = 548.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "L"
-
-[node name="BZ" type="Button" parent="Node2D/OnlineKeybaord" unique_id=778635940]
-offset_left = 452.99997
-offset_top = 553.0
-offset_right = 479.99997
-offset_bottom = 594.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "Z"
-
-[node name="BX" type="Button" parent="Node2D/OnlineKeybaord" unique_id=933508575]
-offset_left = 488.99997
-offset_top = 553.0
-offset_right = 517.0
-offset_bottom = 594.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "X"
-
-[node name="BC" type="Button" parent="Node2D/OnlineKeybaord" unique_id=2029574037]
-offset_left = 525.0
-offset_top = 553.0
-offset_right = 553.0
-offset_bottom = 594.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "C"
-
-[node name="BV" type="Button" parent="Node2D/OnlineKeybaord" unique_id=634455280]
-offset_left = 563.0
-offset_top = 553.0
-offset_right = 593.0
-offset_bottom = 594.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "V"
-
-[node name="BB" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1003222887]
-offset_left = 601.0
-offset_top = 553.0
-offset_right = 627.0
-offset_bottom = 594.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "B"
-
-[node name="BN" type="Button" parent="Node2D/OnlineKeybaord" unique_id=625569778]
-offset_left = 637.99994
-offset_top = 553.0
-offset_right = 665.99994
-offset_bottom = 594.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "N"
-
-[node name="BM" type="Button" parent="Node2D/OnlineKeybaord" unique_id=791563680]
-offset_left = 674.99994
-offset_top = 553.0
-offset_right = 704.99994
-offset_bottom = 594.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "M"
-
-[node name="Enter" type="Button" parent="Node2D/OnlineKeybaord" unique_id=883654878]
-offset_left = 389.0
-offset_top = 555.0
-offset_right = 445.0
-offset_bottom = 591.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-text = "ENTER"
-
-[node name="Delete" type="Button" parent="Node2D/OnlineKeybaord" unique_id=1643251656]
-offset_left = 712.0
-offset_top = 555.0
-offset_right = 768.0
-offset_bottom = 591.0
-mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("4_upy4a")
-text = "⌫"
-
-[node name="Title" type="Label" parent="Node2D" unique_id=1601643142]
-offset_left = 501.0
-offset_top = 23.0
-offset_right = 651.0
-offset_bottom = 72.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 48
-text = "FISHLE"
-horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="Info" type="Sprite2D" parent="Node2D" unique_id=2041889358]
-position = Vector2(950, 30)
-scale = Vector2(0.42, 0.42)
-texture = ExtResource("6_qn6of")
-
-[node name="InfoBut" type="Button" parent="Node2D" unique_id=2057679797]
-modulate = Color(1, 1, 1, 0)
-offset_left = 928.0
-offset_top = 8.0
-offset_right = 972.0
-offset_bottom = 52.0
-mouse_default_cursor_shape = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="BgBlur" type="Panel" parent="Node2D" unique_id=1315864370]
-visible = false
-offset_left = -184.0
-offset_top = -179.0
-offset_right = 1359.0
-offset_bottom = 783.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_ldxs4")
-
-[node name="WordShow" type="Panel" parent="Node2D/BgBlur" unique_id=2048314744]
-visible = false
-layout_mode = 0
-offset_left = 532.0
-offset_top = 307.0
-offset_right = 989.0
-offset_bottom = 579.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_upy4a")
-
-[node name="WordShow" type="Label" parent="Node2D/BgBlur/WordShow" unique_id=589195381]
-layout_mode = 0
-offset_left = 111.0
-offset_top = 19.0
-offset_right = 345.0
-offset_bottom = 52.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "THE WORD WAS"
-horizontal_alignment = 1
-
-[node name="Word" type="Label" parent="Node2D/BgBlur/WordShow" unique_id=202159838]
-layout_mode = 0
-offset_left = 111.0
-offset_top = 64.0
-offset_right = 345.0
-offset_bottom = 97.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-horizontal_alignment = 1
-
-[node name="restart" type="Button" parent="Node2D/BgBlur/WordShow" unique_id=156525617]
-layout_mode = 0
-offset_left = 159.0
-offset_top = 166.0
-offset_right = 298.0
-offset_bottom = 207.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxFlat_w173s")
-text = "RESTART"
-
-[node name="HelpNeed" type="Panel" parent="Node2D/BgBlur" unique_id=2127993666]
-visible = false
-layout_mode = 0
-offset_left = 532.0
-offset_top = 263.0
-offset_right = 989.0
-offset_bottom = 626.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_upy4a")
-
-[node name="Ifno" type="Label" parent="Node2D/BgBlur/HelpNeed" unique_id=148785780]
-layout_mode = 0
-offset_left = 119.0
-offset_top = 19.0
-offset_right = 353.0
-offset_bottom = 52.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "HOW TO  PLAY"
-horizontal_alignment = 1
-
-[node name="instructions" type="Label" parent="Node2D/BgBlur/HelpNeed" unique_id=985184867]
-layout_mode = 0
-offset_left = 53.0
-offset_top = 63.0
-offset_right = 407.0
-offset_bottom = 276.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-text = "Guess a word
--Green correct letter right spot
--Yellow correct letter wrong spot
--Grey letter not in word"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="CLose" type="Button" parent="Node2D/BgBlur/HelpNeed/instructions" unique_id=1699974468]
-layout_mode = 0
-offset_left = 102.0
-offset_top = 231.0
-offset_right = 241.0
-offset_bottom = 272.0
-theme_override_fonts/font = ExtResource("4_upy4a")
-theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxFlat_w173s")
-text = "CLOSE"
-
 [node name="Control" type="Control" parent="." unique_id=1543115111]
 layout_mode = 3
 anchors_preset = 5
@@ -1051,37 +88,1000 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 20.0
 
+[node name="Node2D" type="Node2D" parent="Control" unique_id=1651600405]
+position = Vector2(-576, -320)
+
+[node name="BG" type="Node2D" parent="Control/Node2D" unique_id=154283770]
+position = Vector2(-64, 0)
+
+[node name="GameBg" type="Sprite2D" parent="Control/Node2D/BG" unique_id=385400487]
+position = Vector2(210, 324)
+texture = ExtResource("2_y68d8")
+
+[node name="GameBg" type="Sprite2D" parent="Control/Node2D/BG/GameBg" unique_id=1406530163]
+position = Vector2(-819, -6)
+texture = ExtResource("2_y68d8")
+
+[node name="GameBg" type="Sprite2D" parent="Control/Node2D/BG/GameBg/GameBg" unique_id=869514642]
+position = Vector2(-90, 628)
+texture = ExtResource("2_y68d8")
+
+[node name="GameBg" type="Sprite2D" parent="Control/Node2D/BG/GameBg/GameBg/GameBg" unique_id=2001876253]
+position = Vector2(2521, 26)
+texture = ExtResource("2_y68d8")
+
+[node name="GameBg6" type="Sprite2D" parent="Control/Node2D/BG" unique_id=1373471919]
+position = Vector2(-307, -324)
+texture = ExtResource("2_y68d8")
+
+[node name="GameBg3" type="Sprite2D" parent="Control/Node2D/BG" unique_id=2100416686]
+position = Vector2(480, -324)
+texture = ExtResource("2_y68d8")
+
+[node name="GameBg4" type="Sprite2D" parent="Control/Node2D/BG" unique_id=1961514106]
+position = Vector2(1332, -320)
+texture = ExtResource("2_y68d8")
+
+[node name="GameBg7" type="Sprite2D" parent="Control/Node2D/BG" unique_id=533693690]
+position = Vector2(176, 966)
+texture = ExtResource("2_y68d8")
+
+[node name="GameBg8" type="Sprite2D" parent="Control/Node2D/BG" unique_id=1625404545]
+position = Vector2(1028, 970)
+texture = ExtResource("2_y68d8")
+
+[node name="GameBg2" type="Sprite2D" parent="Control/Node2D/BG" unique_id=1628944647]
+position = Vector2(1362, 324)
+texture = ExtResource("2_y68d8")
+
+[node name="Rectangle1" type="Sprite2D" parent="Control/Node2D" unique_id=2069070029]
+modulate = Color(0, 0.39226744, 0.68771255, 1)
+position = Vector2(575.5, 261.00003)
+scale = Vector2(0.76851845, 0.6675427)
+texture = ExtResource("2_qn6of")
+offset = Vector2(4, 4)
+
+[node name="Colored Boxes" type="Node2D" parent="Control/Node2D" unique_id=501436653]
+position = Vector2(575.5, 254.5)
+scale = Vector2(0.76851845, 0.54533505)
+
+[node name="Row1" type="Node2D" parent="Control/Node2D/Colored Boxes" unique_id=2123835887]
+position = Vector2(-502.9157, -442.847)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row1" unique_id=312132763]
+modulate = Color(0.15686275, 0.15686275, 0.15686275, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row1" unique_id=1349690866]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row1" unique_id=853084758]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row1" unique_id=1925554358]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row1" unique_id=968024945]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row2" type="Node2D" parent="Control/Node2D/Colored Boxes" unique_id=1352921390]
+position = Vector2(-502.9157, -310.81808)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row2" unique_id=452183043]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row2" unique_id=625805282]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row2" unique_id=594785195]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row2" unique_id=1210519466]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row2" unique_id=1181267276]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row3" type="Node2D" parent="Control/Node2D/Colored Boxes" unique_id=955157884]
+position = Vector2(-502.9157, -178.78917)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row3" unique_id=1898890957]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row3" unique_id=1848546136]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row3" unique_id=1909285902]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row3" unique_id=670266783]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row3" unique_id=2144104107]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row4" type="Node2D" parent="Control/Node2D/Colored Boxes" unique_id=1011166710]
+position = Vector2(-502.9157, -46.760223)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row4" unique_id=95391706]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row4" unique_id=65573252]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row4" unique_id=648225660]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row4" unique_id=2029557228]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row4" unique_id=321157955]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row5" type="Node2D" parent="Control/Node2D/Colored Boxes" unique_id=963618015]
+position = Vector2(-502.9157, 85.26868)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row5" unique_id=1437140890]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row5" unique_id=1698432782]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row5" unique_id=1516713495]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row5" unique_id=1199414959]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row5" unique_id=1738870783]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row6" type="Node2D" parent="Control/Node2D/Colored Boxes" unique_id=1485523999]
+position = Vector2(-502.9157, 215.46396)
+scale = Vector2(0.8696659, 1.2255847)
+
+[node name="BlackWord1" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row6" unique_id=455029525]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(365, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord2" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row6" unique_id=69426644]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(472, 152)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord3" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row6" unique_id=1348323105]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(579, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord4" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row6" unique_id=1327303226]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(685, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="BlackWord5" type="Sprite2D" parent="Control/Node2D/Colored Boxes/Row6" unique_id=1939713746]
+modulate = Color(0.1584723, 0.15847233, 0.1584723, 1)
+position = Vector2(791, 153)
+texture = ExtResource("3_y68d8")
+
+[node name="Row Letters" type="Node2D" parent="Control/Node2D" unique_id=1143829051]
+position = Vector2(0, 40)
+
+[node name="Row1" type="Node2D" parent="Control/Node2D/Row Letters" unique_id=1227150239]
+
+[node name="L1" type="Label" parent="Control/Node2D/Row Letters/Row1" unique_id=1011540171]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Control/Node2D/Row Letters/Row1" unique_id=2121908440]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Control/Node2D/Row Letters/Row1" unique_id=1368924899]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Control/Node2D/Row Letters/Row1" unique_id=1845472558]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Control/Node2D/Row Letters/Row1" unique_id=1476183369]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row2" type="Node2D" parent="Control/Node2D/Row Letters" unique_id=1670206507]
+position = Vector2(0, 74)
+
+[node name="L1" type="Label" parent="Control/Node2D/Row Letters/Row2" unique_id=505769765]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Control/Node2D/Row Letters/Row2" unique_id=1571507014]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Control/Node2D/Row Letters/Row2" unique_id=394284978]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Control/Node2D/Row Letters/Row2" unique_id=497644108]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Control/Node2D/Row Letters/Row2" unique_id=1348933707]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row3" type="Node2D" parent="Control/Node2D/Row Letters" unique_id=1225635165]
+position = Vector2(0, 148)
+
+[node name="L1" type="Label" parent="Control/Node2D/Row Letters/Row3" unique_id=630478271]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Control/Node2D/Row Letters/Row3" unique_id=1684232995]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Control/Node2D/Row Letters/Row3" unique_id=1845895991]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Control/Node2D/Row Letters/Row3" unique_id=58268025]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Control/Node2D/Row Letters/Row3" unique_id=529200477]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row4" type="Node2D" parent="Control/Node2D/Row Letters" unique_id=1265987791]
+position = Vector2(0, 215)
+
+[node name="L1" type="Label" parent="Control/Node2D/Row Letters/Row4" unique_id=1177433191]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Control/Node2D/Row Letters/Row4" unique_id=621464977]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Control/Node2D/Row Letters/Row4" unique_id=1224695931]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Control/Node2D/Row Letters/Row4" unique_id=990655007]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Control/Node2D/Row Letters/Row4" unique_id=609727914]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row5" type="Node2D" parent="Control/Node2D/Row Letters" unique_id=184199916]
+position = Vector2(0, 287)
+
+[node name="L1" type="Label" parent="Control/Node2D/Row Letters/Row5" unique_id=1378985312]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Control/Node2D/Row Letters/Row5" unique_id=90971920]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Control/Node2D/Row Letters/Row5" unique_id=379968607]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Control/Node2D/Row Letters/Row5" unique_id=38977573]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Control/Node2D/Row Letters/Row5" unique_id=1195487564]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row6" type="Node2D" parent="Control/Node2D/Row Letters" unique_id=1156624540]
+position = Vector2(0, 355)
+
+[node name="L1" type="Label" parent="Control/Node2D/Row Letters/Row6" unique_id=1250510499]
+offset_left = 416.0
+offset_top = 51.0
+offset_right = 450.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="Control/Node2D/Row Letters/Row6" unique_id=1392192187]
+offset_left = 488.0
+offset_top = 51.0
+offset_right = 522.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L3" type="Label" parent="Control/Node2D/Row Letters/Row6" unique_id=1311696619]
+offset_left = 630.0
+offset_top = 51.0
+offset_right = 664.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L4" type="Label" parent="Control/Node2D/Row Letters/Row6" unique_id=1894705621]
+offset_left = 700.0
+offset_top = 51.0
+offset_right = 734.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L5" type="Label" parent="Control/Node2D/Row Letters/Row6" unique_id=895284803]
+offset_left = 559.0
+offset_top = 51.0
+offset_right = 593.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Keyboard" type="Panel" parent="Control/Node2D" unique_id=2127491251]
+offset_left = 366.0
+offset_top = 529.0
+offset_right = 787.0
+offset_bottom = 702.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_0kpj8")
+metadata/_edit_use_anchors_ = true
+
+[node name="OnlineKeybaord" type="Node2D" parent="Control/Node2D" unique_id=721609453]
+position = Vector2(0, 87)
+
+[node name="BQ" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1023731412]
+offset_left = 395.0
+offset_top = 460.99997
+offset_right = 424.0
+offset_bottom = 501.99997
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "Q"
+
+[node name="BW" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=729146455]
+offset_left = 432.0
+offset_top = 460.99997
+offset_right = 466.0
+offset_bottom = 501.99997
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "W"
+
+[node name="BE" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=512640136]
+offset_left = 472.0
+offset_top = 461.0
+offset_right = 499.0
+offset_bottom = 502.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "E"
+
+[node name="BR" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=169678082]
+offset_left = 504.0
+offset_top = 460.99997
+offset_right = 531.0
+offset_bottom = 501.99997
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "R"
+
+[node name="BT" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1709642743]
+offset_left = 542.0
+offset_top = 460.99997
+offset_right = 571.0
+offset_bottom = 501.99997
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "T"
+
+[node name="BY" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=112512472]
+offset_left = 580.99994
+offset_top = 460.99997
+offset_right = 608.99994
+offset_bottom = 501.99997
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "Y"
+
+[node name="BU" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1809748773]
+offset_left = 617.99994
+offset_top = 460.99997
+offset_right = 645.99994
+offset_bottom = 501.99997
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "U"
+
+[node name="BI" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=326035842]
+offset_left = 657.0
+offset_top = 461.0
+offset_right = 685.0
+offset_bottom = 502.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "I"
+
+[node name="BO" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=547826453]
+offset_left = 691.99994
+offset_top = 460.99997
+offset_right = 719.99994
+offset_bottom = 501.99997
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "O"
+
+[node name="BP" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1856572027]
+offset_left = 729.99994
+offset_top = 460.99997
+offset_right = 756.99994
+offset_bottom = 501.99997
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "P"
+
+[node name="BA" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=2020918525]
+offset_left = 415.99997
+offset_top = 507.0
+offset_right = 445.99997
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "A"
+
+[node name="BS" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1105729430]
+offset_left = 452.99997
+offset_top = 507.0
+offset_right = 479.99997
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "S"
+
+[node name="BD" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1229576420]
+offset_left = 488.99997
+offset_top = 507.0
+offset_right = 516.0
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "D"
+
+[node name="BF" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1621880571]
+offset_left = 525.0
+offset_top = 507.0
+offset_right = 552.0
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "F"
+
+[node name="BG" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=536252733]
+offset_left = 563.0
+offset_top = 507.0
+offset_right = 594.0
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "G"
+
+[node name="BH" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=563049364]
+offset_left = 601.0
+offset_top = 507.0
+offset_right = 628.0
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "H"
+
+[node name="BJ" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1021552612]
+offset_left = 637.99994
+offset_top = 507.0
+offset_right = 665.99994
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "J"
+
+[node name="BK" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1420776601]
+offset_left = 674.99994
+offset_top = 507.0
+offset_right = 705.0
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "K"
+
+[node name="BL" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=610103297]
+offset_left = 711.99994
+offset_top = 507.0
+offset_right = 739.0
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "L"
+
+[node name="BZ" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=778635940]
+offset_left = 452.99997
+offset_top = 553.0
+offset_right = 479.99997
+offset_bottom = 594.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "Z"
+
+[node name="BX" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=933508575]
+offset_left = 488.99997
+offset_top = 553.0
+offset_right = 517.0
+offset_bottom = 594.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "X"
+
+[node name="BC" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=2029574037]
+offset_left = 525.0
+offset_top = 553.0
+offset_right = 553.0
+offset_bottom = 594.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "C"
+
+[node name="BV" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=634455280]
+offset_left = 563.0
+offset_top = 553.0
+offset_right = 593.0
+offset_bottom = 594.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "V"
+
+[node name="BB" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1003222887]
+offset_left = 601.0
+offset_top = 553.0
+offset_right = 627.0
+offset_bottom = 594.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "B"
+
+[node name="BN" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=625569778]
+offset_left = 637.99994
+offset_top = 553.0
+offset_right = 665.99994
+offset_bottom = 594.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "N"
+
+[node name="BM" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=791563680]
+offset_left = 674.99994
+offset_top = 553.0
+offset_right = 704.99994
+offset_bottom = 594.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "M"
+
+[node name="Enter" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=883654878]
+offset_left = 389.0
+offset_top = 555.0
+offset_right = 445.0
+offset_bottom = 591.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+text = "ENTER"
+
+[node name="Delete" type="Button" parent="Control/Node2D/OnlineKeybaord" unique_id=1643251656]
+offset_left = 712.0
+offset_top = 555.0
+offset_right = 768.0
+offset_bottom = 591.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("4_upy4a")
+text = "⌫"
+
+[node name="Title" type="Label" parent="Control/Node2D" unique_id=1601643142]
+offset_left = 501.0
+offset_top = 23.0
+offset_right = 651.0
+offset_bottom = 72.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 48
+text = "FISHLE"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Info" type="Sprite2D" parent="Control/Node2D" unique_id=2041889358]
+position = Vector2(950, 30)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("6_qn6of")
+
+[node name="InfoBut" type="Button" parent="Control/Node2D" unique_id=2057679797]
+modulate = Color(1, 1, 1, 0)
+offset_left = 928.0
+offset_top = 8.0
+offset_right = 972.0
+offset_bottom = 52.0
+mouse_default_cursor_shape = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="BgBlur" type="Panel" parent="Control/Node2D" unique_id=1315864370]
+visible = false
+offset_left = -184.0
+offset_top = -179.0
+offset_right = 1359.0
+offset_bottom = 783.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ldxs4")
+
+[node name="WordShow" type="Panel" parent="Control/Node2D/BgBlur" unique_id=2048314744]
+visible = false
+layout_mode = 0
+offset_left = 532.0
+offset_top = 307.0
+offset_right = 989.0
+offset_bottom = 579.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_upy4a")
+
+[node name="WordShow" type="Label" parent="Control/Node2D/BgBlur/WordShow" unique_id=589195381]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 19.0
+offset_right = 345.0
+offset_bottom = 52.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "THE WORD WAS"
+horizontal_alignment = 1
+
+[node name="Word" type="Label" parent="Control/Node2D/BgBlur/WordShow" unique_id=202159838]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 64.0
+offset_right = 345.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+
+[node name="restart" type="Button" parent="Control/Node2D/BgBlur/WordShow" unique_id=156525617]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 166.0
+offset_right = 298.0
+offset_bottom = 207.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_w173s")
+text = "RESTART"
+
+[node name="HelpNeed" type="Panel" parent="Control/Node2D/BgBlur" unique_id=2127993666]
+visible = false
+layout_mode = 0
+offset_left = 532.0
+offset_top = 263.0
+offset_right = 989.0
+offset_bottom = 626.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_upy4a")
+
+[node name="Ifno" type="Label" parent="Control/Node2D/BgBlur/HelpNeed" unique_id=148785780]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 19.0
+offset_right = 353.0
+offset_bottom = 52.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "HOW TO  PLAY"
+horizontal_alignment = 1
+
+[node name="instructions" type="Label" parent="Control/Node2D/BgBlur/HelpNeed" unique_id=985184867]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 63.0
+offset_right = 407.0
+offset_bottom = 276.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+text = "Guess a word
+-Green correct letter right spot
+-Yellow correct letter wrong spot
+-Grey letter not in word"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="CLose" type="Button" parent="Control/Node2D/BgBlur/HelpNeed/instructions" unique_id=1699974468]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 231.0
+offset_right = 241.0
+offset_bottom = 272.0
+theme_override_fonts/font = ExtResource("4_upy4a")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_w173s")
+text = "CLOSE"
+
+[node name="Camera2D" type="Camera2D" parent="Control" unique_id=227328415]
+position = Vector2(0, 37)
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1300928899]
 libraries/ = SubResource("AnimationLibrary_3wr1t")
 
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BQ" to="." method="_on_bq_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BW" to="." method="_on_bw_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BE" to="." method="_on_be_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BR" to="." method="_on_br_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BT" to="." method="_on_bt_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BY" to="." method="_on_by_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BU" to="." method="_on_bu_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BI" to="." method="_on_bi_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BO" to="." method="_on_bo_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BP" to="." method="_on_bp_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BA" to="." method="_on_ba_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BS" to="." method="_on_bs_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BD" to="." method="_on_bd_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BF" to="." method="_on_bf_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BG" to="." method="_on_bg_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BH" to="." method="_on_bh_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BJ" to="." method="_on_bj_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BK" to="." method="_on_bk_pressed"]
-[connection signal="button_up" from="Node2D/OnlineKeybaord/BL" to="." method="_on_bl_button_up"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BZ" to="." method="_on_bz_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BX" to="." method="_on_bx_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BC" to="." method="_on_bc_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BV" to="." method="_on_bv_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BB" to="." method="_on_bb_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BN" to="." method="_on_bn_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/BM" to="." method="_on_bm_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/Enter" to="." method="_on_enter_pressed"]
-[connection signal="pressed" from="Node2D/OnlineKeybaord/Delete" to="." method="_on_delete_pressed"]
-[connection signal="pressed" from="Node2D/InfoBut" to="." method="_on_info_but_pressed"]
-[connection signal="pressed" from="Node2D/BgBlur/WordShow/restart" to="." method="_on_restart_pressed"]
-[connection signal="pressed" from="Node2D/BgBlur/HelpNeed/instructions/CLose" to="." method="_on_c_lose_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BQ" to="." method="_on_bq_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BW" to="." method="_on_bw_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BE" to="." method="_on_be_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BR" to="." method="_on_br_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BT" to="." method="_on_bt_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BY" to="." method="_on_by_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BU" to="." method="_on_bu_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BI" to="." method="_on_bi_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BO" to="." method="_on_bo_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BP" to="." method="_on_bp_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BA" to="." method="_on_ba_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BS" to="." method="_on_bs_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BD" to="." method="_on_bd_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BF" to="." method="_on_bf_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BG" to="." method="_on_bg_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BH" to="." method="_on_bh_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BJ" to="." method="_on_bj_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BK" to="." method="_on_bk_pressed"]
+[connection signal="button_up" from="Control/Node2D/OnlineKeybaord/BL" to="." method="_on_bl_button_up"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BZ" to="." method="_on_bz_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BX" to="." method="_on_bx_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BC" to="." method="_on_bc_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BV" to="." method="_on_bv_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BB" to="." method="_on_bb_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BN" to="." method="_on_bn_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/BM" to="." method="_on_bm_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/Enter" to="." method="_on_enter_pressed"]
+[connection signal="pressed" from="Control/Node2D/OnlineKeybaord/Delete" to="." method="_on_delete_pressed"]
+[connection signal="pressed" from="Control/Node2D/InfoBut" to="." method="_on_info_but_pressed"]
+[connection signal="pressed" from="Control/Node2D/BgBlur/WordShow/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Control/Node2D/BgBlur/HelpNeed/instructions/CLose" to="." method="_on_c_lose_pressed"]
