@@ -940,16 +940,16 @@ horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Info" type="Sprite2D" parent="Control/Node2D" unique_id=2041889358]
-position = Vector2(950, 30)
+position = Vector2(876, 43)
 scale = Vector2(0.42, 0.42)
 texture = ExtResource("6_qn6of")
 
 [node name="InfoBut" type="Button" parent="Control/Node2D" unique_id=2057679797]
 modulate = Color(1, 1, 1, 0)
-offset_left = 928.0
-offset_top = 8.0
-offset_right = 972.0
-offset_bottom = 52.0
+offset_left = 854.0
+offset_top = 21.0
+offset_right = 898.0
+offset_bottom = 65.0
 mouse_default_cursor_shape = 2
 metadata/_edit_use_anchors_ = true
 
