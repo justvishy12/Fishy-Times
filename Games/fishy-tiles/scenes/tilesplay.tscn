@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://kki2uys1ptwa"]
+
+[ext_resource type="Script" uid="uid://btncjwaqmvu0d" path="res://script/tilesplay.gd" id="1_0w1qj"]
+
+[node name="Node2D" type="Node2D" unique_id=726192319]
+script = ExtResource("1_0w1qj")
