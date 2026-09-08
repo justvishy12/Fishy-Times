@@ -1,6 +1,197 @@
 [gd_scene format=3 uid="uid://kki2uys1ptwa"]
 
 [ext_resource type="Script" uid="uid://btncjwaqmvu0d" path="res://script/tilesplay.gd" id="1_0w1qj"]
+[ext_resource type="Texture2D" uid="uid://ctoo8e1405ckb" path="res://assets/Tile.png" id="2_sd60s"]
+[ext_resource type="Texture2D" uid="uid://b7c40sotmq7ed" path="res://assets/TileA.png" id="3_v8dy4"]
+[ext_resource type="Texture2D" uid="uid://b6l6curtypuou" path="res://assets/TileE.png" id="4_blwdp"]
+[ext_resource type="Texture2D" uid="uid://bwmqru8an7tpr" path="res://assets/TileF.png" id="5_skxk7"]
+[ext_resource type="Texture2D" uid="uid://dlc8026wr6gm1" path="res://assets/TileH.png" id="6_rdmj1"]
+[ext_resource type="Texture2D" uid="uid://chqa0o81tdfi" path="res://assets/TileS.png" id="7_gjd83"]
+[ext_resource type="Texture2D" uid="uid://c0w7d7u7f7udr" path="res://assets/TileW.png" id="8_27euq"]
 
 [node name="Node2D" type="Node2D" unique_id=726192319]
 script = ExtResource("1_0w1qj")
+
+[node name="BaseTiles" type="Node2D" parent="." unique_id=221918918]
+
+[node name="T1" type="Button" parent="BaseTiles" unique_id=1695894602]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 272.0
+offset_top = 144.0
+offset_right = 372.0
+offset_bottom = 244.0
+
+[node name="Tile1" type="Sprite2D" parent="BaseTiles/T1" unique_id=1365823148]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T2" type="Button" parent="BaseTiles" unique_id=639758920]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 440.0
+offset_top = 144.0
+offset_right = 540.0
+offset_bottom = 244.0
+
+[node name="Tile2" type="Sprite2D" parent="BaseTiles/T2" unique_id=998410045]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T3" type="Button" parent="BaseTiles" unique_id=1342886149]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 606.0
+offset_top = 144.0
+offset_right = 706.0
+offset_bottom = 244.0
+
+[node name="Tile3" type="Sprite2D" parent="BaseTiles/T3" unique_id=263575978]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T4" type="Button" parent="BaseTiles" unique_id=312976031]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 765.0
+offset_top = 144.0
+offset_right = 865.0
+offset_bottom = 244.0
+
+[node name="Tile4" type="Sprite2D" parent="BaseTiles/T4" unique_id=2120744658]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T5" type="Button" parent="BaseTiles" unique_id=777855949]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 272.0
+offset_top = 272.0
+offset_right = 372.0
+offset_bottom = 372.0
+
+[node name="Tile5" type="Sprite2D" parent="BaseTiles/T5" unique_id=1880990601]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T6" type="Button" parent="BaseTiles" unique_id=1147341874]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 438.0
+offset_top = 275.0
+offset_right = 538.0
+offset_bottom = 375.0
+
+[node name="Tile6" type="Sprite2D" parent="BaseTiles/T6" unique_id=1383062238]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T7" type="Button" parent="BaseTiles" unique_id=1170428768]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 606.0
+offset_top = 272.0
+offset_right = 706.0
+offset_bottom = 372.0
+
+[node name="Tile7" type="Sprite2D" parent="BaseTiles/T7" unique_id=568377055]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T8" type="Button" parent="BaseTiles" unique_id=1728807323]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 765.0
+offset_top = 272.0
+offset_right = 865.0
+offset_bottom = 372.0
+
+[node name="Tile8" type="Sprite2D" parent="BaseTiles/T8" unique_id=692370426]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T9" type="Button" parent="BaseTiles" unique_id=639202948]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 272.0
+offset_top = 408.0
+offset_right = 372.0
+offset_bottom = 508.0
+
+[node name="Tile9" type="Sprite2D" parent="BaseTiles/T9" unique_id=1198500399]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T10" type="Button" parent="BaseTiles" unique_id=1428498408]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 438.0
+offset_top = 406.0
+offset_right = 538.0
+offset_bottom = 506.0
+
+[node name="Tile10" type="Sprite2D" parent="BaseTiles/T10" unique_id=1057198811]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T11" type="Button" parent="BaseTiles" unique_id=937461181]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 606.0
+offset_top = 408.0
+offset_right = 706.0
+offset_bottom = 508.0
+
+[node name="Tile11" type="Sprite2D" parent="BaseTiles/T11" unique_id=44089112]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="T12" type="Button" parent="BaseTiles" unique_id=1210863431]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 765.0
+offset_top = 408.0
+offset_right = 865.0
+offset_bottom = 508.0
+
+[node name="Tile12" type="Sprite2D" parent="BaseTiles/T12" unique_id=1391185887]
+position = Vector2(50, 50)
+texture = ExtResource("2_sd60s")
+
+[node name="ItemTiles" type="Node2D" parent="." unique_id=645241157]
+
+[node name="Tile1" type="Sprite2D" parent="ItemTiles" unique_id=856635092]
+position = Vector2(-492, 78)
+texture = ExtResource("3_v8dy4")
+
+[node name="Tile2" type="Sprite2D" parent="ItemTiles" unique_id=289702156]
+position = Vector2(-684, 235)
+texture = ExtResource("4_blwdp")
+
+[node name="Tile3" type="Sprite2D" parent="ItemTiles" unique_id=734736628]
+position = Vector2(-468, 228)
+texture = ExtResource("5_skxk7")
+
+[node name="Tile4" type="Sprite2D" parent="ItemTiles" unique_id=1951214666]
+position = Vector2(-311, 75)
+texture = ExtResource("6_rdmj1")
+
+[node name="Tile5" type="Sprite2D" parent="ItemTiles" unique_id=2098913995]
+position = Vector2(-196, 262)
+texture = ExtResource("7_gjd83")
+
+[node name="Tile6" type="Sprite2D" parent="ItemTiles" unique_id=703803329]
+position = Vector2(-134, 83)
+texture = ExtResource("8_27euq")
+
+[node name="Tile7" type="Sprite2D" parent="ItemTiles" unique_id=736808940]
+position = Vector2(-563, 104)
+texture = ExtResource("3_v8dy4")
+
+[node name="Tile8" type="Sprite2D" parent="ItemTiles" unique_id=414654877]
+position = Vector2(-725, 280)
+texture = ExtResource("4_blwdp")
+
+[node name="Tile9" type="Sprite2D" parent="ItemTiles" unique_id=86793073]
+position = Vector2(-521, 271)
+texture = ExtResource("5_skxk7")
+
+[node name="Tile10" type="Sprite2D" parent="ItemTiles" unique_id=425596176]
+position = Vector2(-362, 121)
+texture = ExtResource("6_rdmj1")
+
+[node name="Tile11" type="Sprite2D" parent="ItemTiles" unique_id=424547086]
+position = Vector2(-251, 303)
+texture = ExtResource("7_gjd83")
+
+[node name="Tile12" type="Sprite2D" parent="ItemTiles" unique_id=3002101]
+position = Vector2(-161, 130)
+texture = ExtResource("8_27euq")
